@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | ChaniiApps LLC</title>
     
+    <!-- Tailwind CSS CDN for instant premium styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
+    <!-- Google Fonts: Playfair Display for luxury headings, Inter for clean body copy -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -23,13 +25,16 @@
 </head>
 <body class="text-gray-300 min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
+    <!-- Header & Navigation -->
     <header class="border-b border-purple-950/30 backdrop-blur-md sticky top-0 z-50 bg-[#0b0312]/80">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
             <a href="index.html" class="flex items-center gap-3 group">
                 <img src="assets/logo.png" alt="ChaniiApps LLC Logo" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 <span class="font-serif text-xl font-medium tracking-wide text-white group-hover:text-amber-200 transition-colors">ChaniiApps</span>
             </a>
             
+            <!-- Navigation Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-400">
                 <a href="index.html" class="hover:text-white transition-colors duration-200">Home</a>
                 <a href="about.html" class="hover:text-white transition-colors duration-200">About</a>
@@ -38,6 +43,7 @@
                 <a href="contact.html" class="text-amber-200 border-b border-amber-200/60 pb-1">Contact</a>
             </nav>
 
+            <!-- Desktop Action Button -->
             <div class="hidden md:block">
                 <a href="apps.html" class="bg-gradient-to-r from-purple-900 to-indigo-950 hover:from-purple-800 hover:to-indigo-900 text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded-full border border-purple-500/20 shadow-lg shadow-purple-950/50 transition-all duration-300 transform hover:-translate-y-0.5">
                     Get Started
@@ -46,4 +52,89 @@
         </div>
     </header>
 
-    <main class="flex-grow max-w-6xl mx-auto px-6 py-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Side: Header Text & Direct Email Panel -->
+        <div class="lg:col-span-5 space-y-8 text-center lg:text-left">
+            <div class="space-y-4">
+                <h1 class="font-serif text-4xl sm:text-5xl text-white font-light tracking-wide">
+                    Connect With Us
+                </h1>
+                <p class="text-gray-400 font-light text-base max-w-md mx-auto lg:mx-0 leading-relaxed">
+                    Have a corporate inquiry, partnership idea, or general question? Drop us a line using the secure form, and our team will get back to you shortly.
+                </p>
+            </div>
+
+            <!-- Alternative Quick Link Panel -->
+            <div class="p-6 rounded-2xl border border-purple-500/10 bg-purple-950/10 space-y-3 max-w-md mx-auto lg:mx-0 text-left">
+                <span class="block text-[10px] text-purple-400 uppercase tracking-widest font-medium">Direct Inquiries</span>
+                <p class="text-xs text-gray-400 font-light">Prefer direct emailing? Reach out to us anytime at:</p>
+                <a href="mailto:support.chaniiapps@gmail.com" class="inline-block text-sm text-amber-200 font-medium tracking-wide hover:underline">
+                    support.chaniiapps@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Side: Clean Premium Contact Form -->
+        <div class="lg:col-span-7">
+            <form class="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-purple-950/20 to-transparent border border-purple-500/10 shadow-2xl backdrop-blur-sm space-y-6">
+                
+                <!-- Name Field -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold tracking-widest uppercase text-purple-300">Name</label>
+                    <input type="text" placeholder="Your name" required 
+                           class="w-full bg-purple-950/20 border border-purple-900/40 rounded-xl px-4 py-3.5 text-gray-200 text-sm placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:ring-1 focus:ring-purple-500/30 transition-all">
+                </div>
+
+                <!-- Email Field -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold tracking-widest uppercase text-purple-300">Email</label>
+                    <input type="email" placeholder="your.email@domain.com" required 
+                           class="w-full bg-purple-950/20 border border-purple-900/40 rounded-xl px-4 py-3.5 text-gray-200 text-sm placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:ring-1 focus:ring-purple-500/30 transition-all">
+                </div>
+
+                <!-- Subject Field -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold tracking-widest uppercase text-purple-300">Subject</label>
+                    <input type="text" placeholder="What are you getting in touch about?" required 
+                           class="w-full bg-purple-950/20 border border-purple-900/40 rounded-xl px-4 py-3.5 text-gray-200 text-sm placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:ring-1 focus:ring-purple-500/30 transition-all">
+                </div>
+
+                <!-- Message Field -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold tracking-widest uppercase text-purple-300">Message</label>
+                    <textarea rows="6" placeholder="Write your message details here..." required 
+                              class="w-full bg-purple-950/20 border border-purple-900/40 rounded-xl px-4 py-3.5 text-gray-200 text-sm placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:ring-1 focus:ring-purple-500/30 transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Submit Action Button -->
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-amber-400 to-amber-200 hover:brightness-110 text-purple-950 font-semibold uppercase tracking-widest text-xs py-4 rounded-xl shadow-xl shadow-amber-500/5 transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                    Send Message
+                </button>
+                
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="border-t border-purple-950/40 py-10 bg-[#08020d]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-gray-500 tracking-wide">
+            <div>
+                &copy; 2026 ChaniiApps LLC. All Rights Reserved.
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="privacy.html" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                <a href="cookies.html" class="hover:text-gray-300 transition-colors">Cookies</a>
+                <a href="accessibility.html" class="hover:text-gray-300 transition-colors">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 
+The
