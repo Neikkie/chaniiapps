@@ -1,57 +1,147 @@
-<section class="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | ChaniiApps LLC</title>
+    
+    <!-- Tailwind CSS CDN for instant premium styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Google Fonts: Playfair Display for luxury headings, Inter for clean body copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0312; /* Matching deep dark purple background */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-<h1>Privacy Policy</h1>
+    <!-- Header & Navigation -->
+    <header class="border-b border-purple-950/30 backdrop-blur-md sticky top-0 z-50 bg-[#0b0312]/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="assets/logo.png" alt="ChaniiApps LLC Logo" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                <span class="font-serif text-xl font-medium tracking-wide text-white group-hover:text-amber-200 transition-colors">ChaniiApps</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-400">
+                <a href="index.html" class="hover:text-white transition-colors duration-200">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors duration-200">About</a>
+                <a href="apps.html" class="hover:text-white transition-colors duration-200">Apps</a>
+                <a href="support.html" class="hover:text-white transition-colors duration-200">Support</a>
+                <a href="contact.html" class="hover:text-white transition-colors duration-200">Contact</a>
+            </nav>
 
-<p>
-Effective Date: January 1, 2026
-</p>
+            <!-- Desktop Action Button -->
+            <div class="hidden md:block">
+                <a href="apps.html" class="bg-gradient-to-r from-purple-900 to-indigo-950 hover:from-purple-800 hover:to-indigo-900 text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded-full border border-purple-500/20 shadow-lg shadow-purple-950/50 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
 
-<h2>Information We Collect</h2>
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-16 w-full">
+        
+        <!-- Header Title Section -->
+        <div class="text-center md:text-left space-y-4 mb-12">
+            <h1 class="font-serif text-4xl sm:text-5xl text-white font-light tracking-wide">
+                Privacy Policy
+            </h1>
+            <p class="text-purple-300/70 text-xs tracking-widest uppercase font-medium">
+                Effective Date: January 1, 2026
+            </p>
+            <div class="w-full h-px bg-gradient-to-r from-purple-950 via-purple-500/20 to-transparent pt-2"></div>
+        </div>
 
-<ul>
+        <!-- Privacy Content Blocks -->
+        <div class="space-y-12 text-gray-400 font-light leading-relaxed">
+            
+            <!-- Section 1 -->
+            <section class="space-y-4">
+                <h2 class="font-serif text-xl text-amber-200/90 font-medium tracking-wide">1. Information We Collect</h2>
+                <p>
+                    To deliver premium application experiences, we process core diagnostic telemetry. The categories of information we collect include:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 marker:text-purple-500">
+                    <li><strong class="text-gray-300 font-medium">Device Information:</strong> Device hardware models, unique identifiers, and operating system metrics.</li>
+                    <li><strong class="text-gray-300 font-medium">Usage Analytics:</strong> Anonymized interaction logs, processing latencies, and platform navigation paths.</li>
+                    <li><strong class="text-gray-300 font-medium">Account Data:</strong> User credentials, profile parameters, and specialized setup criteria (where explicitly applicable).</li>
+                </ul>
+            </section>
 
-<li>Device information</li>
+            <!-- Section 2 -->
+            <section class="space-y-4">
+                <h2 class="font-serif text-xl text-amber-200/90 font-medium tracking-wide">2. How We Use Information</h2>
+                <p>
+                    Any processing of core system variables is driven strictly by intentional technical requirements:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 marker:text-purple-500">
+                    <li><strong class="text-gray-300 font-medium">App Optimization:</strong> Refining code efficiency, system performance, and application layouts.</li>
+                    <li><strong class="text-gray-300 font-medium">Customer Support:</strong> Resolving technical inquiries and diagnosing edge-case bugs.</li>
+                    <li><strong class="text-gray-300 font-medium">Security Maintenance:</strong> Guarding against unauthorized access patterns and structural vulnerabilities.</li>
+                </ul>
+            </section>
 
-<li>Usage analytics</li>
+            <!-- Section 3 -->
+            <section class="space-y-3">
+                <h2 class="font-serif text-xl text-amber-200/90 font-medium tracking-wide">3. Third-Party Services</h2>
+                <p>
+                    Our software infrastructure collaborates with leading, trusted third-party cloud architectures to verify stability and maintain functionality. These integrations include Apple's secure ecosystem services, Google Firebase diagnostics, or other industry-standard infrastructure providers.
+                </p>
+            </section>
 
-<li>Account information (if applicable)</li>
+            <!-- Section 4 -->
+            <section class="space-y-3">
+                <h2 class="font-serif text-xl text-amber-200/90 font-medium tracking-wide">4. Data Security Standard</h2>
+                <p>
+                    We deploy commercially reasonable administrative, mechanical, and systemic protections intended to shield your operational data records from external disclosure, breach, or unauthorized parsing.
+                </p>
+            </section>
 
-</ul>
+            <!-- Section 5 (Contact Panel) -->
+            <section class="space-y-4 bg-purple-950/10 border border-purple-500/10 p-6 rounded-2xl">
+                <h2 class="font-serif text-xl text-amber-200/90 font-medium tracking-wide">5. Contact and Inquiries</h2>
+                <p class="text-sm">
+                    If you have questions regarding our data collection architectures or specific processing workflows, please direct your compliance inquiries directly to our privacy desk:
+                </p>
+                <div class="inline-block px-4 py-2 mt-2 rounded-lg bg-purple-950/40 border border-purple-900/50">
+                    <a href="mailto:privacy@chaniiapps.com" class="text-amber-200 font-medium text-sm tracking-wide hover:underline">
+                        privacy@chaniiapps.com
+                    </a>
+                </div>
+            </section>
 
-<h2>How We Use Information</h2>
+        </div>
+    </main>
 
-<ul>
+    <!-- Footer Area -->
+    <footer class="border-t border-purple-950/40 py-10 bg-[#08020d]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-gray-500 tracking-wide">
+            <div>
+                &copy; 2026 ChaniiApps LLC. All Rights Reserved.
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="privacy.html" class="text-amber-200 font-medium">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                <a href="cookies.html" class="hover:text-gray-300 transition-colors">Cookies</a>
+                <a href="accessibility.html" class="hover:text-gray-300 transition-colors">Accessibility</a>
+            </div>
+        </div>
+    </footer>
 
-<li>Improve our apps</li>
-
-<li>Provide customer support</li>
-
-<li>Maintain security</li>
-
-</ul>
-
-<h2>Third-Party Services</h2>
-
-<p>
-
-Our apps may use Apple's services, Firebase, or other trusted providers.
-
-</p>
-
-<h2>Data Security</h2>
-
-<p>
-
-We use commercially reasonable safeguards to protect user data.
-
-</p>
-
-<h2>Contact</h2>
-
-<p>
-
-privacy@chaniiapps.com
-
-</p>
-
-</section>
+</body>
+</html>
