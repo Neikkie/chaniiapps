@@ -1,69 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Our Apps</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Applications | ChaniiApps LLC</title>
+    
+    <!-- Tailwind CSS CDN for instant premium styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Google Fonts: Playfair Display for luxury headings, Inter for clean body copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0312; /* Matching deep dark purple background */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
+<body class="text-gray-300 min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-<body>
+    <!-- Header & Navigation -->
+    <header class="border-b border-purple-950/30 backdrop-blur-md sticky top-0 z-50 bg-[#0b0312]/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="assets/logo.png" alt="ChaniiApps LLC Logo" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                <span class="font-serif text-xl font-medium tracking-wide text-white group-hover:text-amber-200 transition-colors">ChaniiApps</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-400">
+                <a href="index.html" class="hover:text-white transition-colors duration-200">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors duration-200">About</a>
+                <a href="apps.html" class="text-amber-200 border-b border-amber-200/60 pb-1">Apps</a>
+                <a href="support.html" class="hover:text-white transition-colors duration-200">Support</a>
+                <a href="contact.html" class="hover:text-white transition-colors duration-200">Contact</a>
+            </nav>
 
-<header>
+            <!-- Desktop Action Button -->
+            <div class="hidden md:block">
+                <a href="contact.html" class="bg-gradient-to-r from-purple-900 to-indigo-950 hover:from-purple-800 hover:to-indigo-900 text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded-full border border-purple-500/20 shadow-lg shadow-purple-950/50 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </header>
 
-<a href="index.html">
-<img src="assets/images/logo.png" class="logo">
-</a>
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full space-y-16">
+        
+        <!-- Page Header Title -->
+        <div class="text-center space-y-4 max-w-2xl mx-auto">
+            <h1 class="font-serif text-4xl sm:text-5xl text-white font-light tracking-wide">
+                Our Applications
+            </h1>
+            <p class="text-gray-400 font-light text-base sm:text-lg leading-relaxed">
+                Discover modern software architecture meticulously engineered to bring elegance, clarity, and simplicity to everyday digital workflows.
+            </p>
+            <div class="w-12 h-0.5 bg-gradient-to-r from-purple-500 to-amber-300 mx-auto pt-1"></div>
+        </div>
 
-<nav>
+        <!-- Application Grid Layout -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+            
+            <!-- App Card 1: Parent Chat -->
+            <div class="group p-8 rounded-3xl bg-gradient-to-b from-purple-950/20 to-transparent border border-purple-500/10 hover:border-purple-500/20 shadow-xl transition-all duration-300 flex flex-col justify-between items-start gap-6 relative overflow-hidden">
+                <div class="absolute -right-12 -top-12 w-32 h-32 bg-purple-600/5 rounded-full filter blur-2xl group-hover:bg-purple-600/10 transition-colors"></div>
+                
+                <div class="space-y-3">
+                    <!-- App Icon Style Tag -->
+                    <div class="w-10 h-10 rounded-xl bg-purple-900/20 border border-purple-500/20 flex items-center justify-center text-amber-300 font-serif text-lg">
+                        P
+                    </div>
+                    <h2 class="font-serif text-2xl text-white font-light tracking-wide group-hover:text-amber-200 transition-colors">
+                        Parent Chat
+                    </h2>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-md">
+                        A clean, intuitive communication platform designed to bring parents together. Stay connected, coordinate schedules, and build supportive environments effortlessly.
+                    </p>
+                </div>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="apps.html" class="active">Apps</a>
-<a href="support.html">Support</a>
-<a href="contact.html">Contact</a>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-300 hover:text-amber-100 transition-colors pt-2">
+                    View on App Store <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </div>
 
-</nav>
+            <!-- App Card 2: Future Release Placeholder -->
+            <div class="p-8 rounded-3xl border border-dashed border-purple-950/60 bg-purple-950/5 flex flex-col justify-center items-center text-center gap-3 min-h-[250px]">
+                <div class="w-8 h-8 rounded-full border border-purple-900/60 flex items-center justify-center text-purple-400 text-sm animate-pulse">
+                    ✦
+                </div>
+                <h3 class="font-serif text-lg text-gray-400 font-light">More Innovation Ahead</h3>
+                <p class="text-gray-500 font-light text-xs max-w-xs">
+                    We are currently wireframing solutions across productivity, family, and education ecosystems. Stay tuned.
+                </p>
+            </div>
 
-</header>
+        </section>
 
-<section class="page-header">
+    </main>
 
-<h1>Our Applications</h1>
-
-<p>
-Discover apps designed to make everyday life easier.
-</p>
-
-</section>
-
-<section class="app-grid">
-
-<div class="card">
-
-<h2>Parent Chat</h2>
-
-<p>
-A communication platform that helps parents stay connected.
-</p>
-
-<a href="#">View on the App Store</a>
-
-</div>
-
-<!-- Add more apps here -->
-
-</section>
-
-<footer>
-
-<p>© 2026 ChaniiApps LLC</p>
-
-</footer>
+    <!-- Footer Area -->
+    <footer class="border-t border-purple-950/40 py-10 bg-[#08020d]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-gray-500 tracking-wide">
+            <div>
+                &copy; 2026 ChaniiApps LLC. All Rights Reserved.
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="privacy.html" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                <a href="cookies.html" class="hover:text-gray-300 transition-colors">Cookies</a>
+                <a href="accessibility.html" class="hover:text-gray-300 transition-colors">Accessibility</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
