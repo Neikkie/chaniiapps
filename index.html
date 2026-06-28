@@ -1,258 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chaniiapps LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --ink:     #0f0f10;
-      --paper:   #f7f5f0;
-      --mid:     #6b6860;
-      --rule:    #dedad4;
-      --accent:  #2a52e0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    html { scroll-behavior: smooth; }
+<title>ChaniiApps LLC</title>
 
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
+<link rel="stylesheet" href="assets/css/style.css">
 
-    /* ── NAV ── */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 28px 6vw;
-      border-bottom: 1px solid var(--rule);
-    }
-    .logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.25rem;
-      letter-spacing: -0.01em;
-      color: var(--ink);
-      text-decoration: none;
-    }
-    .logo span { color: var(--accent); }
-    nav a.contact-link {
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--mid);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    nav a.contact-link:hover { color: var(--ink); border-color: var(--ink); }
-
-    /* ── HERO ── */
-    .hero {
-      padding: 100px 6vw 80px;
-      max-width: 860px;
-    }
-    .eyebrow {
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 28px;
-    }
-    h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2.6rem, 6vw, 4.4rem);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      margin-bottom: 32px;
-    }
-    h1 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-    .hero-sub {
-      font-size: 1.15rem;
-      color: var(--mid);
-      max-width: 520px;
-      line-height: 1.7;
-    }
-
-    /* ── DIVIDER ── */
-    .rule { border: none; border-top: 1px solid var(--rule); margin: 0 6vw; }
-
-    /* ── SECTION ── */
-    section {
-      padding: 80px 6vw;
-    }
-    .section-label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--mid);
-      margin-bottom: 48px;
-    }
-
-    /* ── WHAT WE BUILD ── */
-    .pillars {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 40px;
-    }
-    .pillar h3 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.35rem;
-      letter-spacing: -0.01em;
-      margin-bottom: 12px;
-    }
-    .pillar p {
-      font-size: 0.95rem;
-      color: var(--mid);
-      line-height: 1.7;
-    }
-
-    /* ── PLATFORMS ── */
-    .platforms {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .platform-tag {
-      display: inline-block;
-      border: 1px solid var(--rule);
-      border-radius: 100px;
-      padding: 8px 20px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--mid);
-      letter-spacing: 0.02em;
-    }
-
-    /* ── ABOUT ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-    @media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
-    .about-grid h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-      line-height: 1.2;
-      letter-spacing: -0.015em;
-    }
-    .about-grid p {
-      color: var(--mid);
-      font-size: 0.98rem;
-      line-height: 1.8;
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      border-top: 1px solid var(--rule);
-      padding: 36px 6vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    footer p {
-      font-size: 0.82rem;
-      color: var(--mid);
-    }
-    footer a {
-      font-size: 0.82rem;
-      color: var(--mid);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    footer a:hover { color: var(--ink); border-color: var(--ink); }
-
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  </style>
 </head>
+
 <body>
 
-  <nav>
-    <a class="logo" href="/">Chaniiapps<span>.</span></a>
-    <a class="contact-link" href="#contact">Contact</a>
-  </nav>
+<header>
 
-  <div class="hero">
-    <p class="eyebrow">Chaniiapps LLC</p>
-    <h1>App creation tools<br>for <em>iPhone, iPad</em><br>&amp; Mac.</h1>
-    <p class="hero-sub">We build focused, well-crafted tools that help people create on Apple devices — designed from the ground up for every screen.</p>
-  </div>
+<img src="assets/images/logo.png" class="logo">
 
-  <hr class="rule" />
+<nav>
 
-  <section>
-    <p class="section-label">What we build</p>
-    <div class="pillars">
-      <div class="pillar">
-        <h3>Creation Tools</h3>
-        <p>Apps designed around the act of making — built for the way people actually work on iPhone, iPad, and Mac.</p>
-      </div>
-      <div class="pillar">
-        <h3>Cross-Device First</h3>
-        <p>Every product supports the full Apple platform from day one — adaptive layouts, Dynamic Type, and Mac Catalyst.</p>
-      </div>
-      <div class="pillar">
-        <h3>Indie &amp; Independent</h3>
-        <p>A solo studio with a focused point of view. No bloat, no feature creep — just tools that do their job well.</p>
-      </div>
-    </div>
-  </section>
+<a href="index.html">Home</a>
 
-  <hr class="rule" />
+<a href="about.html">About</a>
 
-  <section>
-    <p class="section-label">Platforms</p>
-    <div class="platforms">
-      <span class="platform-tag">iPhone</span>
-      <span class="platform-tag">iPad</span>
-      <span class="platform-tag">Mac Catalyst</span>
-      <span class="platform-tag">SwiftUI</span>
-      <span class="platform-tag">App Store</span>
-    </div>
-  </section>
+<a href="apps.html">Apps</a>
 
-  <hr class="rule" />
+<a href="support.html">Support</a>
 
-  <section id="contact">
-    <div class="about-grid">
-      <h2>Independent studio.<br>Built in the U.S.</h2>
-      <div>
-        <p>Chaniiapps LLC is a U.S.-registered software studio focused on building app creation tools for Apple platforms.</p>
-        <br />
-        <p>For inquiries, reach out at <strong>hello@chaniiapps.com</strong></p>
-      </div>
-    </div>
-  </section>
+<a href="contact.html">Contact</a>
 
-  <footer>
-    <p>© 2026 Chaniiapps LLC. All rights reserved.</p>
-    <div style="display:flex;gap:24px;">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-    </div>
-  </footer>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Building Innovative Apps for Everyday Life</h1>
+
+<p>
+ChaniiApps LLC develops modern, user-friendly mobile applications
+focused on productivity, education, communication, and family solutions.
+</p>
+
+<a class="button" href="apps.html">
+Explore Our Apps
+</a>
+
+</section>
+
+<section>
+
+<h2>Our Mission</h2>
+
+<p>
+
+Our mission is to create intuitive applications that simplify everyday
+tasks while providing secure, reliable, and enjoyable digital experiences.
+
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 ChaniiApps LLC. All Rights Reserved.</p>
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="terms.html">Terms</a>
+
+<a href="cookies.html">Cookies</a>
+
+<a href="eula.html">EULA</a>
+
+<a href="accessibility.html">Accessibility</a>
+
+</footer>
 
 </body>
+
 </html>
