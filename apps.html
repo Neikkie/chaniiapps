@@ -66,40 +66,32 @@
             <div class="w-12 h-0.5 bg-gradient-to-r from-purple-500 to-amber-300 mx-auto pt-1"></div>
         </div>
 
-        <!-- Application Grid Layout -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+        <!-- Application Showcase Card -->
+        <section class="max-w-3xl mx-auto">
             
-            <!-- App Card 1: Parent Chat -->
-            <div class="group p-8 rounded-3xl bg-gradient-to-b from-purple-950/20 to-transparent border border-purple-500/10 hover:border-purple-500/20 shadow-xl transition-all duration-300 flex flex-col justify-between items-start gap-6 relative overflow-hidden">
-                <div class="absolute -right-12 -top-12 w-32 h-32 bg-purple-600/5 rounded-full filter blur-2xl group-hover:bg-purple-600/10 transition-colors"></div>
+            <!-- App Store Catalog Card -->
+            <div class="group p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-purple-950/30 to-transparent border border-purple-500/10 hover:border-purple-500/20 shadow-2xl transition-all duration-300 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 relative overflow-hidden">
+                <div class="absolute -right-12 -top-12 w-40 h-40 bg-purple-600/5 rounded-full filter blur-3xl group-hover:bg-purple-600/10 transition-colors"></div>
                 
-                <div class="space-y-3">
-                    <!-- App Icon Style Tag -->
-                    <div class="w-10 h-10 rounded-xl bg-purple-900/20 border border-purple-500/20 flex items-center justify-center text-amber-300 font-serif text-lg">
-                        P
-                    </div>
-                    <h2 class="font-serif text-2xl text-white font-light tracking-wide group-hover:text-amber-200 transition-colors">
-                        Parent Chat
+                <div class="space-y-4 max-w-xl">
+                    <!-- App Store Badge Indicator -->
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase font-semibold tracking-wider bg-purple-500/10 border border-purple-500/20 text-purple-300">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse"></span> Now Live on iOS
+                    </span>
+                    <h2 class="font-serif text-2xl sm:text-3xl text-white font-light tracking-wide group-hover:text-amber-200 transition-colors">
+                        The ChaniiApps Ecosystem
                     </h2>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-md">
-                        A clean, intuitive communication platform designed to bring parents together. Stay connected, coordinate schedules, and build supportive environments effortlessly.
+                    <p class="text-gray-400 font-light text-sm sm:text-base leading-relaxed">
+                        Explore our official suite of published software. We focus on building clean utility interfaces and specialized workflow applications designed exclusively for Apple platforms.
                     </p>
                 </div>
 
-                <a href="#" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-300 hover:text-amber-100 transition-colors pt-2">
-                    View on App Store <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-                </a>
-            </div>
-
-            <!-- App Card 2: Future Release Placeholder -->
-            <div class="p-8 rounded-3xl border border-dashed border-purple-950/60 bg-purple-950/5 flex flex-col justify-center items-center text-center gap-3 min-h-[250px]">
-                <div class="w-8 h-8 rounded-full border border-purple-900/60 flex items-center justify-center text-purple-400 text-sm animate-pulse">
-                    ✦
+                <div class="w-full sm:w-auto shrink-0">
+                    <a href="https://apps.apple.com/kz/developer/shanique-beckford/id1848586450" target="_blank" rel="noopener noreferrer"
+                       class="block w-full sm:inline-block text-center bg-gradient-to-r from-amber-400 to-amber-200 hover:brightness-110 text-purple-950 font-semibold uppercase tracking-widest text-xs px-6 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-0.5">
+                        View App Store Suite
+                    </a>
                 </div>
-                <h3 class="font-serif text-lg text-gray-400 font-light">More Innovation Ahead</h3>
-                <p class="text-gray-500 font-light text-xs max-w-xs">
-                    We are currently wireframing solutions across productivity, family, and education ecosystems. Stay tuned.
-                </p>
             </div>
 
         </section>
